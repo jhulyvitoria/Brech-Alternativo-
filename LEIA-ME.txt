@@ -1,0 +1,44 @@
+CONCEITO VISUAL DO BRECHÓ DA MALU
+=================================
+
+Abra o arquivo index.html no navegador (precisa de internet só para as fontes do Google Fonts).
+
+ARQUIVOS
+  index.html   → o conteúdo: textos e a estrutura de todas as artes
+  style.css    → as cores, fontes e o visual (mude as cores no topo, em :root)
+  script.js    → o que faz a página funcionar (escala das artes, nome/@)
+  images/      → as fotos de roupa e referências visuais
+
+COMO TROCAR AS FOTOS DE ROUPA
+  Salve a foto real na pasta images/ com o MESMO NOME da imagem-modelo
+  (ex.: vestido.jpg) e ela entra sozinha em todas as artes que usam aquela peça.
+  Prefira JPG. Se usar PNG, troque também a extensão no index.html (procure por "images/").
+
+  vestido.jpg     → vestido roxo estampado (editorial, garimpos, enquete, sold B)
+  top.jpg         → blusa preta de renda (produto, sold A, stories, garimpos)
+  bota.jpg        → recorte das botas do look gótico (garimpos)
+  look.jpg        → conjunto gótico preto com botas e bolsa
+  detalhe.jpg     → close da renda roxa
+  bastidores.jpg  → aviamentos e acessórios (story de bastidores)
+  zine-1.jpg      → cropped preto com vermelho
+  zine-2.jpg      → blusa/corset preto e vinho
+  zine-3.jpg      → blusa roxa de mangas amplas
+  kuromi.jpg      → imagem temporária de perfil/marca (Kuromi)
+
+  Tamanho ideal: 1080 × 1350 px (vertical). As fotos são cortadas para caber
+  nas molduras; roupas usam contain para a peça inteira aparecer. Bastidores e renda usam cover.
+  O efeito de pontinhos (xerox) vem do CSS: para tirar, apague o bloco
+  ".pic::before" em style.css.
+
+NOME E @
+  Os dois campos no topo da página trocam o nome e o @ em todas as artes.
+  Para deixar fixo, mude o "value" dos campos no index.html
+  (procure por id="in-brand" e id="in-handle").
+
+O QUE CONTINUA SENDO DESENHO (dentro do index.html)
+  Estrelas, luas, corações, cruz, setas, rabiscos, cabide e a silhueta de
+  peças pequenas nos destaques ficam no bloco <svg> do começo do index.html.
+
+EXPORTAR PARA POSTAR
+  Cada arte tem 1080 × 1350 px (posts) ou 1080 × 1920 px (stories).
+  Tire um print de cada uma ou peça para gerar os PNGs.
